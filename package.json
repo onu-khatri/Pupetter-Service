@@ -1,0 +1,33 @@
+{
+  "name": "export-service",
+  "version": "2.0.0",
+  "description": "export service for PDF and PNG leveraging chrome headless",
+  "main": "dist/src/server.js",
+  "scripts": {
+    "start": "node dist/src/server.js",
+    "build": "tsc --build --verbose",
+    "server:start": "npm run build && npm run start"
+  },
+  "author": "Anup Singh",
+  "license": "MIT",
+  "dependencies": {
+    "async": "3.2.5",
+    "body-parser": "1.20.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2",
+    "express-validator": "7.0.1",
+    "lodash": "^4.17.21",
+    "puppeteer": "22.0.0",
+    "puppeteer-chromium-resolver": "22.0.0",
+    "simple-node-logger": "21.8.12"
+  },
+  "devDependencies": {
+    "@types/async": "3.2.24",
+    "@types/body-parser": "1.19.5",
+    "@types/express": "4.17.17",
+    "@types/lodash": "4.14.202",
+    "@types/node": "20.11.16",
+    "@types/serve-static": "1.15.5",
+    "typescript": "5.3.3"
+  }
+}
